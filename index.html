@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Information Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Home Page -->
+  <header>
+    <h1>Business Information Application</h1>
+  </header>
+
+  <!-- Red Alert Message for Available Cities -->
+  <p id="alert-message">
+    Our services and categories are only available in Islamabad, Lahore, and Karachi.
+  </p>
+
+  <!-- Display Business Categories on Home Page -->
+  <section id="categories">
+    <h2>Business Categories</h2>
+
+    <div class="category-section">
+      <h3>1. Restaurants</h3>
+      <div class="business-list" id="restaurants-list">
+        <div class="business-card">Pakistani Delight (Karachi)</div>
+        <div class="business-card">Karachi BBQ House (Lahore)</div>
+        <div class="business-card">Lahore Food Corner (Islamabad)</div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h3>2. Real Estate</h3>
+      <div class="business-list" id="real-estate-list">
+        <div class="business-card">Estate Masters (Islamabad)</div>
+        <div class="business-card">Top Realty (Lahore)</div>
+        <div class="business-card">Urban Homes (Karachi)</div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h3>3. Schools</h3>
+      <div class="business-list" id="schools-list">
+        <div class="business-card">Beaconhouse School (Islamabad)</div>
+        <div class="business-card">The City School (Lahore)</div>
+        <div class="business-card">Roots Millennium School (Karachi)</div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h3>4. Clinics</h3>
+      <div class="business-list" id="clinics-list">
+        <div class="business-card">Shifa Clinic (Islamabad)</div>
+        <div class="business-card">Al-Rehman Medical Center (Lahore)</div>
+        <div class="business-card">Sehat Medical Clinic (Karachi)</div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h3>5. Law Firms</h3>
+      <div class="business-list" id="law-firms-list">
+        <div class="business-card">PakLaw Associates (Islamabad)</div>
+        <div class="business-card">Legal Masters Law Firm (Lahore)</div>
+        <div class="business-card">Justice Partners (Karachi)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- User Panel -->
+  <div id="user-panel">
+    <h2>User Panel</h2>
+
+    <!-- Message -->
+    <p>If you want to register your business of the above-mentioned categories, fill the below information:</p>
+
+    <!-- Add Business Profile -->
+    <div class="user-section" id="add-business">
+      <h3>Add Business Profile</h3>
+      <form id="business-form">
+        <!-- Business Name -->
+        <input type="text" id="business-name" placeholder="Business Name" required>
+
+        <!-- Category Dropdown -->
+        <select id="business-category" required>
+          <option value="" disabled selected>Select Category</option>
+          <option value="Restaurants">Restaurants</option>
+          <option value="Real Estate">Real Estate</option>
+          <option value="Schools">Schools</option>
+          <option value="Clinics">Clinics</option>
+          <option value="Law Firms">Law Firms</option>
+        </select>
+
+        <!-- City Dropdown -->
+        <select id="business-city" required>
+          <option value="" disabled selected>Select City</option>
+          <option value="Islamabad">Islamabad</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Karachi">Karachi</option>
+        </select>
+
+        <button type="submit">Add Business</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

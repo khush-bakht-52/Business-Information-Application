@@ -1,0 +1,33 @@
+/* Category Section Styles */
+.category-section {
+    margin-bottom: 20px;
+  }
+  
+  .category-section h3 {
+    color: #007bff; /* Heading color */
+    font-weight: bold;
+  }
+  
+  .business-list {
+    margin-top: 10px;
+  }
+  
+  .business-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  /* New Business Styles */
+  .new-business {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text color */
+  }
+  
+  #alert-message {
+    color: red;
+    font-weight: bold;
+  }
+  
